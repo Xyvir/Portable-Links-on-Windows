@@ -18,7 +18,6 @@ cygssl-1.1.dll
 cygwin1.dll
 cygz.dll
 cygzstd-1.dll
-linkbat.cmd
 links.crt
 links.exe
 
