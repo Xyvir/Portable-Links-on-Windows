@@ -33,10 +33,8 @@ if "%~1"=="-FIXED_CTRL_C" (
    GOTO :EOF
 )
 
-set "loc=%tmp%\Links\"
-IF NOT EXIST "%loc%links.exe" XCOPY . %loc% /S /E /Y
-START "" /WAIT CMD /c "%loc%links.exe"
-for /f %%A in ('tasklist /FI "IMAGENAME eq links.exe" ^| findstr INFO:') do rmdir /s /q "%loc%"
+START "" /WAIT CMD /c .\links.exe 
+
 
 
 5. run IEXPRESS and select the following options
